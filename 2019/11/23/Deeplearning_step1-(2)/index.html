@@ -5,14 +5,21 @@
   
 
   
-  <title>HYUNJAE&#39;s Blog</title>
+  <title>딥러닝 1단계 : 신경망과 딥러닝(2) | HYUNJAE&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="HYUNJAE&#39;s Blog">
-<meta property="og:url" content="http:&#x2F;&#x2F;yuhyunjae.github.io&#x2F;index.html">
+  <meta name="description" content="2. 신경망과 로지스틱회귀1강 - 이진분류 학습목표 : 로지스틱 분류(Logistic Classification)을 이야기 하기 전에 이진분류의 개념을 이해하고, 문제 설정과 표기법을 정의할 수 있음  keyword : 이진분류(Binary Classification), 로지스틱 분류(Logistic Classification)  학습내용 :  1) 신경망">
+<meta name="keywords" content="Deep Learning step.1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="딥러닝 1단계 : 신경망과 딥러닝(2)">
+<meta property="og:url" content="http:&#x2F;&#x2F;yuhyunjae.github.io&#x2F;2019&#x2F;11&#x2F;23&#x2F;Deeplearning_step1-(2)&#x2F;index.html">
 <meta property="og:site_name" content="HYUNJAE&#39;s Blog">
+<meta property="og:description" content="2. 신경망과 로지스틱회귀1강 - 이진분류 학습목표 : 로지스틱 분류(Logistic Classification)을 이야기 하기 전에 이진분류의 개념을 이해하고, 문제 설정과 표기법을 정의할 수 있음  keyword : 이진분류(Binary Classification), 로지스틱 분류(Logistic Classification)  학습내용 :  1) 신경망">
 <meta property="og:locale" content="kor">
+<meta property="og:image" content="https:&#x2F;&#x2F;cphinf.pstatic.net&#x2F;mooc&#x2F;20181026_62&#x2F;154051753591861ru0_PNG&#x2F;derivatives.PNG">
+<meta property="og:image" content="https:&#x2F;&#x2F;cphinf.pstatic.net&#x2F;mooc&#x2F;20180615_270&#x2F;1529026981725rnVc0_PNG&#x2F;image.PNG">
+<meta property="og:updated_time" content="2019-11-22T15:00:00.000Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;cphinf.pstatic.net&#x2F;mooc&#x2F;20181026_62&#x2F;154051753591861ru0_PNG&#x2F;derivatives.PNG">
   
     <link rel="alternate" href="/atom.xml" title="HYUNJAE&#39;s Blog" type="application/atom+xml">
   
@@ -59,9 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Deeplearning_step1-(2)" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Deeplearning_step1-(2)" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/11/23/Deeplearning_step1-(2)/" class="article-date">
   <time datetime="2019-11-22T15:00:00.000Z" itemprop="datePublished">2019-11-23</time>
@@ -78,8 +83,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/23/Deeplearning_step1-(2)/">딥러닝 1단계 : 신경망과 딥러닝(2)</a>
+    <h1 class="article-title" itemprop="name">
+      딥러닝 1단계 : 신경망과 딥러닝(2)
     </h1>
   
 
@@ -231,136 +236,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Deeplearning_step1-(1)" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/11/19/Deeplearning_step1-(1)/" class="article-date">
-  <time datetime="2019-11-18T15:00:00.000Z" itemprop="datePublished">2019-11-19</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Deep-Learning/">Deep Learning</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/19/Deeplearning_step1-(1)/">딥러닝 1단계 : 신경망과 딥러닝(1)</a>
-    </h1>
+    <a href="/2019/11/19/Deeplearning_step1-(1)/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">딥러닝 1단계 : 신경망과 딥러닝(1)</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="1-딥러닝-소개"><a href="#1-딥러닝-소개" class="headerlink" title="1. 딥러닝 소개"></a>1. 딥러닝 소개</h1><h2 id="1강-환영합니다"><a href="#1강-환영합니다" class="headerlink" title="1강 - 환영합니다."></a>1강 - 환영합니다.</h2><ul>
-<li><p>keyword : Deep learning, Neural Network, CNN, RNN</p>
-</li>
-<li><p>학습내용 :<br>  1) Deep Learning을 포함한 새로운 Neural Network를 어떻게 설계하는지, 어떻게 데이터를 가지고 학습 하는지<br>  2) NN작동원리 및 하이퍼 파라미터 조율, bias와 variance는 어떻게 차즌ㄴ지, 최적화 알고리즘은 무어잇이 있는지<br>  3) ML 프로젝트를 어떻게 설계해야하는지<br>  4) 이미지에 적용되는 CNN모델 구축 방법</p>
-</li>
-</ul>
-<h2 id="2강-신경망은-무엇인가"><a href="#2강-신경망은-무엇인가" class="headerlink" title="2강 - 신경망은 무엇인가?"></a>2강 - 신경망은 무엇인가?</h2><ul>
-<li><p>학습목표 : 신경망(Neural Network)이 무엇인지</p>
-</li>
-<li><p>keyword : 신경망(Neural Network)</p>
-</li>
-<li><p>학습내용 :<br>  1) 신경망이란 입력(x)와 출력(y)를 매칭해주는 함수를 찾는 과정<br>  2) 충분한 데이터가 주어지면 더 잘 알아낼수 있음<br>  3) 해당 뉴런에 관계없는 입력값이라도 입력으로 넣어주어야함. 관계 여부는 신경망이 학습하면서 알아서 조절</p>
-</li>
-<li><p>강의 내용 :</p>
-<ul>
-<li>신경망의 뉴런 : X -&gt; 뉴런 -&gt; Y<ul>
-<li>더 큰 신경망은 더 많은 뉴런들로 구성됨</li>
-<li>뉴런을 쌓음으로써 더큰 신경망이 됨</li>
-<li>은닉 유닛</li>
-</ul>
-</li>
-<li>뉴런?  X를 입력받아 선형 함수를 계산하고 Y를 예측</li>
-<li>ReLu - Rectified Linear Unit : rectify는 0과 결과 값 중 큰 값을 취하라는 뜻</li>
-<li>어떤 신경망을 만들고 싶든지, 어떤 계산을 하고 싶든지 신경망의 입력층(input layer)과 중앙에 있는 층(은닉층)은 조밀하게 연결되어 있음</li>
-<li>모든 입력 특성들은 중앙에 있는 원 모두에 연결되어 있기 때문에 충분한 양의 x와 y를 훈련 예제로 준다면  신경망은 x를 y로 연결하는 함수를 알아내는데 뛰어날 것임</li>
-</ul>
-</li>
-</ul>
-<h2 id="3강-신경망을-이용한-지도학습"><a href="#3강-신경망을-이용한-지도학습" class="headerlink" title="3강 - 신경망을 이용한 지도학습"></a>3강 - 신경망을 이용한 지도학습</h2><ul>
-<li><p>학습목표 : 지도학습(Supervised Learnig)이 무엇인지</p>
-</li>
-<li><p>keyword : 지도학습(Supervised Learnig), 입력(Input), 출력(Output), 구조적 데이터(Structured Data), 비구조적 데이터(Unstructured Data)</p>
-</li>
-<li><p>학습내용 :<br>1) 머신러닝의 방법은 지도 학습, 비지도 학습 등 여러가지 종류가 있음<br>  2) 지도 학습이란 정답이 주어져있는 데이터를 사용하여 컴퓨터를 학습시키는 방법<br>  3) 신경망을 이용해 지도 학습을 구현할 수 있음<br>  4) 분야에 따라 적용되는 신경망이 다름<br>   ex)이미지 분류를 위해 CNN, 음성을 텍스트로 변화시키기 위해 RNN 사용<br>  5) 구조적 및 비구조적 데이터를 신경망을 사용하여 예측<br>  6) 구조적 데이터 : 데이터베이스로 표현된 데이터, 정보의 특성이 잘 정의되어 있음<br>  7) 비구조적 데이터 : 이미지, 오디오와 같이 특징적인 값을 추출하기 어려운 형태의 데이터, 딥러닝으로 컴퓨터가 비구조적 데이터를 인식할 수 있게 됨.</p>
-</li>
-<li><p>강의내용 :</p>
-<ul>
-<li>지금까지 대부분의 신경망을 통해 만들어진 경제적인 가치들은 머신러닝의 한 종류인 지도학습을 통해 계산됨</li>
-<li>지도학습에서는 입력 X와 출력 Y에 매핑되는 함수를 학습하려함<br>  예시 - 주택가격, 온라인 광고, 컴퓨터 비전, 음성인식, 기계 번역, 자율주행 등</li>
-<li>신경망을 통한 많은 값들의 생성은 어떤 문제를 해결하기 위한 적절한 X와 Y를 통해 이루어지고, 자율 주행 같은 더 큰 시스템에 지도학습 요소들이 적합하게 함.</li>
-<li>조금씩 다른 신경망들은 서로 다른 적절한 응용분야에 적용됨</li>
-<li>표준신경망, CNN, 합성곱 신경망, 주로 1차원의 시계열 데이터로 나타나는 시퀀스 데이터 - RNN,등</li>
-<li>구조적 데이터(Structured Data) : 기본적으로 데이터베이스로 표현된 데이터</li>
-<li>비구조적 데이터(Unstructured Data) : 오디오, 이미지, 텍스트 등 구조적 데이터 보다 컴퓨터가 작업하기 훨씬 어려움</li>
-<li>신경망에서 발생하는 많은 경제적인 이익은 광고 시스템이나 사용자 맞춤 추천 같은 구조적 데이터에서 오는 경우가 많음</li>
-<li>신경망은 지도학습으로 변환할 수 있고, 거대한 수익을 창출할 수 있음</li>
-<li>신경망의 기본적인 기술적 아이디어들은 몇십 년간 존재해 왔음</li>
-</ul>
-</li>
-</ul>
-<h2 id="4강-왜-딥러닝이-뜨고-있을가요"><a href="#4강-왜-딥러닝이-뜨고-있을가요" class="headerlink" title="4강 - 왜 딥러닝이 뜨고 있을가요?"></a>4강 - 왜 딥러닝이 뜨고 있을가요?</h2><ul>
-<li><p>학습목표 : 최근 딥러닝이 강력한 도구로 부상해는지 알 수 있음</p>
-</li>
-<li><p>keyword : 데이터 크기(Scale of Data), 컴퓨팅 성능 향상(Computation), 알고리즘(Algorithm)</p>
-</li>
-<li><p>학습내용 :<br>1) 깊은 모델 일수록 더 많은 데이터가 필요하며, 이는 곧 좋은 퍼포먼스로 나타남<br>  2) 최근 딥러닝이 강력한 도구로 부상한 이유는 아래의 3가지 요인들로 인해 딥러닝 성능이 향상되었기 때문</p>
-<ul>
-<li><p>데이터 양 증가</p>
-<ul>
-<li>컴퓨터 성능 향상</li>
-<li>알고리즘의 개선<ul>
-<li>Sigmoid 함수가 아닌 ReLU 함수를 사용함으로 Gradient 소멸 문제 해결<br><img src="https://cphinf.pstatic.net/mooc/20180605_277/1528164524767VuUW2_PNG/sigRelu.PNG" alt="Sigmoid와 ReLU 함수"></li>
-</ul>
-</li>
-<li>Sigmoid는 왼쪽, 오른쪽 끝으로 가면 미분값이 0이 되기 때문에 Gradient가 소멸하는 문제가 발생, ReLU 함수를 사용하므로 문제를 해결할 수 있음.</li>
-</ul>
-<p>3) 이전과 달리 빠른 실험 결과를 얻을 수 있어서 “아이디어(Idea) 생산 &gt; 코드(code) 구현 &gt; 실험(Experiment)” 결과의 시간이 단축되어 더 많은 아이디어를 실험할 수 있게 됨.</p>
-</li>
-</ul>
-</li>
-<li><p>강의내용 :</p>
-<ul>
-<li>많은 문제에 대해 상대적으로 적은 양의 데이터가 있었다가 꽤 많은 양의 데이터를 보유하게 됨</li>
-<li>전통적인 학습 알고리즘이 효과적으로 처리할 수 있는 양 이상으로 생산됨</li>
-<li>신경망을 사용하면 훈련시켰을 </li>
-<li>높은 성능을 발휘하기 위해서는 많은 양의 데이터를 이용하기 위해 충분히 큰 신경망, 많은 데이터</li>
-<li>신경망 성능을 올릴 때 가장 신뢰할 수 있는 방법은 더 큰 신경망을 훈련시키거나, 더 많은 데이터를 Input</li>
-<li>훈련 데이터가 적은 경우 구현방법에 따라 성능이 결정되는 경우가 많음</li>
-<li>초창기 딥러닝의 문제 : 데이터, 계산 규모</li>
-<li>신경망 학습에 오랜 시간이 걸리면 “아이디어 &gt; 코드 &gt; 실험”의 주기가 오래걸릴 뿐만 아니라, 생산성에 큰 차이를 줌</li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yuhyunjae.github.io/2019/11/19/Deeplearning_step1-(1)/" data-id="ck3blcpyu00006suj4y968dcp" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Deep-Learning-step-1/" rel="tag">Deep Learning step.1</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
